@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Java SE 8 (1) | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="New feature in Java SE 8.Pass the OCAJ test and become a Certified Associate Java SE 8 Programmer!">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java SE 8 (1)">
+<meta property="og:url" content="http://yoursite.com/2016/07/01/Java-SE-8-1/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="New feature in Java SE 8.Pass the OCAJ test and become a Certified Associate Java SE 8 Programmer!">
+<meta property="og:image" content="http://yoursite.com/img/oracle.png">
+<meta property="og:updated_time" content="2016-07-10T15:58:33.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Java SE 8 (1)">
+<meta name="twitter:description" content="New feature in Java SE 8.Pass the OCAJ test and become a Certified Associate Java SE 8 Programmer!">
+<meta name="twitter:image" content="http://yoursite.com/img/oracle.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Java-SE-8-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/07/01/Java-SE-8-1/" class="article-date">
+  <time datetime="2016-07-01T04:28:47.000Z" itemprop="datePublished">2016-07-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/JavaSE/">JavaSE</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Java SE 8 (1)
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>New feature in Java SE 8.<br>Pass the OCAJ test and become a Certified Associate Java SE 8 Programmer!<br><a id="more"></a></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><img src="/img/oracle.png" alt="可以去oracle官网下载logo哟(^o^)/"></h2><h1 id="概述："><a href="#概述：" class="headerlink" title="概述："></a>概述：</h1><p>今年5月在家等日本签证的时候干了很多奇怪的事，比如考了这个OCAJ…且不说鸡肋与否，准备的过程中还是学到了很多东西，对Java也是更加爱得深沉（嗯但我有空还是会写python博客），想着那就记录一下，温（qiang）故（xing）知（zhung）新（bi）嘛。所以这个分类中将持续纪录一些关于Java的比较tricky的问题以及脑洞总结。</p>
+<p>OCAJ就是原来Sun公司的SCJA认证考试。由于sun公司被甲骨文收购，原来的SCJA &amp; SCJP 考试也相应地变成了Oracle 旗下的OCAJ &amp; OCAP 考试。 OCAJ考试相对来说还是比较容易的，但是与Oracle的经典数据库认证不同， 其Java认证必须从OCAJ开始考，通过了之后才能继续考OCAP以及Java EE的高级认证（数据库认证可从OCP开始考，通过之后才有资格考OCM）。</p>
+<p>更多信息见：<a href="http://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=39" target="_blank" rel="external">http://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=39</a></p>
+<p>此处小吐槽一下此类考试信息不要搜某度，国内数据库认证盛行但很少有Java认证信息。兔同学貌似就是长沙某考试中心有史以来第一个参加OCAJ考试的（手动微笑）。</p>
+<p>废话完结，以上。</p>
+<h1 id="参考书："><a href="#参考书：" class="headerlink" title="参考书："></a>参考书：</h1><ol>
+<li>Head first Java, O’Reilly.（画风清奇，已收藏纸质版…另外废话一句，O’Reilly家的Head first系列都好棒呀！）</li>
+<li>Core Java, Pearson</li>
+<li>OCA: Oracle Certified Associate Java SE 8 Programmer I Study Guide, Jeanne Boyarsky &amp; Scott Selikoff</li>
+<li>Thinking in Java, Bruce Eckel</li>
+</ol>
+<h1 id="正文："><a href="#正文：" class="headerlink" title="正文："></a>正文：</h1><p>放一个Assessment Test镇楼。来源：OCA Study Guide<br>1, What is the result of the following class? (Choose all that apply)<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">_C</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">int</span> $;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] main)</span> </span>&#123;</span><br><span class="line">        String a_b;</span><br><span class="line">        System.out.print($);</span><br><span class="line">        System.out.print(a_b);</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>A. Compiler error on line 1.<br>B. Compiler error on line 2.<br>C. Compiler error on line 4.<br>D. Compiler error on line 5.<br>E. Compiler error on line 6.<br>F. 0null<br>G. nullnull</p>
+<p>2, What is the result of the following code?<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">String s1 = <span class="string">"Java"</span>;</span><br><span class="line">String s2 = <span class="string">"Java"</span>;</span><br><span class="line">StringBuilder sb1 = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">sb1.append(<span class="string">"Ja"</span>).append(<span class="string">"va"</span>);</span><br><span class="line">System.out.println(s1 == s2);</span><br><span class="line">System.out.println(s1.equals(s2));</span><br><span class="line">System.out.println(sb1.toString() == s1);</span><br><span class="line">System.out.println(sb1.toString().equals(s1));</span><br></pre></td></tr></table></figure></p>
+<p>A. true is printed out exactly once.<br>B. true is printed out exactly twice.<br>C. true is printed out exactly three times.<br>D. true is printed out exactly four times.<br>E. The code does not compile.</p>
+<p>3, What is the output of the following code? (Choose all that apply)<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">HasTail</span> </span>&#123; </span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">getTailLength</span><span class="params">()</span></span>; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">Puma</span> <span class="keyword">implements</span> <span class="title">HasTail</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">int</span> <span class="title">getTailLength</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">4</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Cougar</span> <span class="keyword">extends</span> <span class="title">Puma</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Puma puma = <span class="keyword">new</span> Puma();</span><br><span class="line">        System.out.println(puma.getTailLength());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getTailLength</span><span class="params">(<span class="keyword">int</span> length)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>A. 2<br>B. 4<br>C. The code will not compile because of line 3.<br>D. The code will not compile because of line 5.<br>E. The code will not compile because of line 7.<br>F. The code will not compile because of line 11.<br>G. The output cannot be determined from the code provided.</p>
+<p>4, What is the output of the following program?<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FeedingSchedule</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">boolean</span> keepGoing = <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> x = <span class="number">3</span>;</span><br><span class="line">        <span class="keyword">while</span>(count++ &lt; <span class="number">3</span>) &#123;</span><br><span class="line">            <span class="keyword">int</span> y = (<span class="number">1</span> + <span class="number">2</span> * count) % <span class="number">3</span>;</span><br><span class="line">            <span class="keyword">switch</span>(y) &#123;</span><br><span class="line">                <span class="keyword">default</span>:</span><br><span class="line">                <span class="keyword">case</span> <span class="number">0</span>: x -= <span class="number">1</span>; <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="number">1</span>: x += <span class="number">5</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(x);</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>A. 4<br>B. 5<br>C. 6<br>D. 7<br>E. 13<br>F. The code will not compile because of line 7.</p>
+<p>5, What is the output of the following code snippet?<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">System.out.print(<span class="string">"a"</span>);</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    System.out.print(<span class="string">"b"</span>);</span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException();</span><br><span class="line">&#125; <span class="keyword">catch</span> (RuntimeException e) &#123;</span><br><span class="line">    System.out.print(<span class="string">"c"</span>);</span><br><span class="line">&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">    System.out.print(<span class="string">"d"</span>);</span><br><span class="line">&#125;</span><br><span class="line">System.out.print(<span class="string">"e"</span>);</span><br></pre></td></tr></table></figure></p>
+<p>A. abe<br>B. abce<br>C. abde<br>D. abcde<br>E. The code does not compile.<br>F. An uncaught exception is thrown.</p>
+<p>6, What is the result of the following program?<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MathFunctions</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">addToInt</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> amountToAdd)</span> </span>&#123;</span><br><span class="line">        x = x + amountToAdd;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> a = <span class="number">15</span>;</span><br><span class="line">        <span class="keyword">int</span> b = <span class="number">10</span>;</span><br><span class="line">        MathFunctions.addToInt(a, b);</span><br><span class="line">        System.out.println(a); </span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>A. 10<br>B. 15<br>C. 25<br>D. Compiler error on line 3.<br>E. Compiler error on line 8.<br>F. None of the above.</p>
+<p>7, What is the result of the following code?<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] array = &#123;<span class="number">6</span>,<span class="number">9</span>,<span class="number">8</span>&#125;;</span><br><span class="line">List&lt;Integer&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">list.add(array[<span class="number">0</span>]);</span><br><span class="line">list.add(array[<span class="number">2</span>]);</span><br><span class="line">list.set(<span class="number">1</span>, array[<span class="number">1</span>]);</span><br><span class="line">list.remove(<span class="number">0</span>);</span><br><span class="line">System.out.println(list);</span><br></pre></td></tr></table></figure></p>
+<p>A. [8]<br>B. [9]<br>C. Something like [Ljava.lang.String;@160bc7c0<br>D. An exception is thrown.<br>E. The code does not compile.</p>
+<p>8, What is the output of the following code?<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Deer</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Deer</span><span class="params">()</span> </span>&#123; </span><br><span class="line">        System.out.print(<span class="string">"Deer"</span>); </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Deer</span><span class="params">(<span class="keyword">int</span> age)</span> </span>&#123; </span><br><span class="line">        System.out.print(<span class="string">"DeerAge"</span>); </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">boolean</span> <span class="title">hasHorns</span><span class="params">()</span> </span>&#123; </span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>; </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Deer deer = <span class="keyword">new</span> Reindeer(<span class="number">5</span>);</span><br><span class="line">        System.out.println(<span class="string">","</span>+deer.hasHorns());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Reindeer</span> <span class="keyword">extends</span> <span class="title">Deer</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Reindeer</span><span class="params">(<span class="keyword">int</span> age)</span> </span>&#123; </span><br><span class="line">        System.out.print(<span class="string">"Reindeer"</span>); </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">hasHorns</span><span class="params">()</span> </span>&#123; </span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>; </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>A. DeerReindeer,false<br>B. DeerReindeer,true<br>C. ReindeerDeer,false<br>D. ReindeerDeer,true<br>E. DeerAgeReindeer,false<br>F. DeerAgeReindeer,true<br>G. The code will not compile because of line 7.<br>H. The code will not compile because of line 12.</p>
+<p>9, Which of the following statements are true? (Choose all that apply)<br>A. Checked exceptions are intended to be thrown by the JVM (and not the programmer).<br>B. Checked exceptions are required to be caught or declared.<br>C. Errors are intended to be thrown by the JVM (and not the programmer).<br>D. Errors are required to be caught or declared.<br>E. Runtime exceptions are intended to be thrown by the JVM (and not the programmer).<br>F. Runtime exceptions are required to be caught or declared.</p>
+<p>10, Which are true of the following code? (Choose all that apply)<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Grasshopper</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Grasshopper</span><span class="params">(String n)</span> </span>&#123;</span><br><span class="line">        name = n;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Grasshopper one = <span class="keyword">new</span> Grasshopper(<span class="string">"g1"</span>);</span><br><span class="line">        Grasshopper two = <span class="keyword">new</span> Grasshopper(<span class="string">"g2"</span>);</span><br><span class="line">        one = two;</span><br><span class="line">        two = <span class="keyword">null</span>;</span><br><span class="line">        one = <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">private</span> String name; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>A. Immediately after line 9, no grasshopper objects are eligible for garbage collection.<br>B. Immediately after line 10, no grasshopper objects are eligible for garbage collection.<br>C. Immediately after line 9, only one grasshopper object is eligible for garbage collection.<br>D. Immediately after line 10, only one grasshopper object is eligible for garbage collection.<br>E. Immediately after line 11, only one grasshopper object is eligible for garbage collection.<br>F. The code compiles.<br>G. The code does not compile.</p>
+<p>11, What is the output of the following program?<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FeedingSchedule</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> x = <span class="number">5</span>, j = <span class="number">0</span>;</span><br><span class="line">        OUTER: <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">3</span>; )</span><br><span class="line">            INNER: do &#123;</span><br><span class="line">                    i++; x++;</span><br><span class="line">                    <span class="keyword">if</span>(x &gt; <span class="number">10</span>) <span class="keyword">break</span> INNER;</span><br><span class="line">                    x += <span class="number">4</span>;</span><br><span class="line">                    j++;</span><br><span class="line">                &#125; <span class="keyword">while</span>(j &lt;= <span class="number">2</span>);</span><br><span class="line">            System.out.println(x);</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>A. 10<br>B. 12<br>C. 13<br>D. 17<br>E. The code will not compile because of line 4.<br>F. The code will not compile because of line 6.</p>
+<p>12, What is the result of the following program?<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Egret</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String color;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Egret</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>(<span class="string">"white"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Egret</span><span class="params">(String color)</span> </span>&#123;</span><br><span class="line">        color = color;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Egret e = <span class="keyword">new</span> Egret();</span><br><span class="line">        System.out.println(<span class="string">"Color:"</span> + e.color);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>A. Color:<br>B. Color:null<br>C. Color:White<br>D. Compiler error on line 4.<br>E. Compiler error on line 10.<br>F. Compiler error on line 11.</p>
+<p>13, What is the output of the following program?<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BearOrShark</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> luck = <span class="number">10</span>;</span><br><span class="line">        <span class="keyword">if</span>((luck&gt;<span class="number">10</span> ? luck++: --luck)&lt;<span class="number">10</span>) &#123;</span><br><span class="line">            System.out.print(<span class="string">"Bear"</span>);</span><br><span class="line">        &#125; </span><br><span class="line">        <span class="keyword">if</span>(luck&lt;<span class="number">10</span>) </span><br><span class="line">            System.out.print(<span class="string">"Shark"</span>);</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>A. Bear<br>B. Shark<br>C. BearShark<br>D. The code will not compile because of line 4.<br>E. The code will not compile because of line 6.<br>F. The code compiles without issue but does not produce any output.</p>
+<p>14, Assuming we have a valid, non-null HenHouse object whose value is initialized by the<br>blank line shown here, which of the following are possible outputs of this application?<br>(Choose all that apply)<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Chicken</span> </span>&#123;&#125;</span><br><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">HenHouse</span> </span>&#123; </span><br><span class="line">    <span class="keyword">public</span> java.util.<span class="function">List&lt;Chicken&gt; <span class="title">getChickens</span><span class="params">()</span></span>; </span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ChickenSong</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        HenHouse house = ______________</span><br><span class="line">        Chicken chicken = house.getChickens().get(<span class="number">0</span>);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;house.getChickens().size(); chicken = house.getChickens().get(i++)) &#123;</span><br><span class="line">            System.out.println(<span class="string">"Cluck"</span>);</span><br><span class="line">        &#125; </span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>A. The code will not compile because of line 6.<br>B. The code will not compile because of lines 7–8.<br>C. The application will compile but not produce any output.<br>D. The application will output Cluck exactly once.<br>E. The application will output Cluck more than once.<br>F. The application will compile but produce an exception at runtime.</p>
+<p>15, Which of the following statements can be inserted in the blank line so that the code will<br>compile successfully? (Choose all that apply)<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">CanSwim</span> </span>&#123;&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Amphibian</span> <span class="keyword">implements</span> <span class="title">CanSwim</span> </span>&#123;&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Tadpole</span> <span class="keyword">extends</span> <span class="title">Amphibian</span> </span>&#123;&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FindAllTadPole</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        List&lt;Tadpole&gt; tadpoles = <span class="keyword">new</span> ArrayList&lt;Tadpole&gt;();</span><br><span class="line">        <span class="keyword">for</span>(Amphibian amphibian : tadpoles) &#123;</span><br><span class="line">            ___________ tadpole = amphibian;</span><br><span class="line">        &#125; </span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>A. CanSwim<br>B. Long<br>C. Amphibian<br>D. Tadpole<br>E. Object</p>
+<p>16, What individual changes, if any, would allow the following code to compile? (Choose all<br>that apply)<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Animal</span> </span>&#123; </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">default</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123; </span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>; </span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">Mammal</span> </span>&#123; </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">default</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123; </span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>; </span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">Otter</span> <span class="keyword">implements</span> <span class="title">Mammal</span>, <span class="title">Animal</span> </span>&#123;&#125;</span><br></pre></td></tr></table></figure></p>
+<p>A. The code compiles without issue.<br>B. Remove the default method modifier and method implementation on line 1.<br>C. Remove the default method modifier and method implementation on line 2.<br>D. Remove the default method modifier and method implementation on lines 1 and 2.<br>E. Change the return value on line 1 from null to “Animal”.<br>F. Override the getName() method with an abstract method in the Otter class.<br>G. Override the getName() method with a concrete method in the Otter class.</p>
+<p>17, Which of the following lines can be inserted at line 11 to print true? (Choose all that<br>apply)<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// INSERT CODE HERE</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">test</span><span class="params">(Predicate&lt;Integer&gt; p)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> p.test(<span class="number">5</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>A. System.out.println(test(i -&gt; i == 5));<br>B. System.out.println(test(i -&gt; {i == 5;}));<br>C. System.out.println(test((i) -&gt; i == 5));<br>D. System.out.println(test((int i) -&gt; i == 5);<br>E. System.out.println(test((int i) -&gt; {return i == 5;}));<br>F. System.out.println(test((i) -&gt; {return i == 5;}));</p>
+<p>18, Which of the following print out a date representing April 1, 2015? (Choose all that apply)<br>A. System.out.println(LocalDate.of(2015, Calendar.APRIL, 1));<br>B. System.out.println(LocalDate.of(2015, Month.APRIL, 1));<br>C. System.out.println(LocalDate.of(2015, 3, 1));<br>D. System.out.println(LocalDate.of(2015, 4, 1));<br>E. System.out.println(new LocalDate(2015, 3, 1));<br>F. System.out.println(new LocalDate(2015, 4, 1));</p>
+<p>19, Bytecode is in a file with which extension?<br>A. .bytecode<br>B. .bytes<br>C. .class<br>D. .exe<br>E. .javac<br>F. .java</p>
+<p>20, Which of the following are checked exceptions? (Choose all that apply)<br>A. Exception<br>B. IllegalArgumentException<br>C. IOException<br>D. NullPointerException<br>E. NumberFormatException<br>F. StackOverflowError</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/07/01/Java-SE-8-1/" data-id="ciqgsyin90002s75fidlgfjqp" class="article-share-link">Partager</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OCAJ/">OCAJ</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/07/02/Java-SE-8-2/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Récent</strong>
+      <div class="article-nav-title">
+        
+          Java SE 8 (2)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/07/01/Java-EE/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title">Java EE Test Page</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Catégories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/JavaEE/">JavaEE</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/JavaSE/">JavaSE</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Mot-clés</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OCAJ/">OCAJ</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Nuage de mot-clés</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/OCAJ/" style="font-size: 20px;">OCAJ</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">July 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Articles récents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/07/11/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/02/Java-SE-8-2/">Java SE 8 (2)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/01/Java-SE-8-1/">Java SE 8 (1)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/01/Java-EE/">Java EE Test Page</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
